@@ -10,4 +10,5 @@ document.querySelector('#it-value').value = programIt;
 document.querySelector('#gov-value').value = programGov;
 document.querySelector('#zero-value').value = programZero;
 
-//указываем ставку в label/
+//указываем ставку в label
+document.querySelector('#base-text').innerText = programBase;
