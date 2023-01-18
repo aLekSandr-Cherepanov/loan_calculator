@@ -12,3 +12,6 @@ document.querySelector('#zero-value').value = programZero;
 
 //указываем ставку в label
 document.querySelector('#base-text').innerText = programBase;
+document.querySelector('#it-text').innerText = programIt;
+document.querySelector('#gov-text').innerText = programGov;
+document.querySelector('#zero-text').innerText = programZero;
