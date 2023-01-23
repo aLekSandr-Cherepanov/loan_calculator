@@ -21,7 +21,7 @@ document.querySelector('#zero-text').innerText = percentFormatter.format(program
 
 // отображение выбранной процентной ставки
 const programInputs = document.querySelectorAll('input[name="program"]');
-const totalPercent = document.querySelector('#total-persent');
+const totalPercent = document.querySelector('#total-percent');
 
 programInputs.forEach((input) => {
     //отображение ставки на старте
