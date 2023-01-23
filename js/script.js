@@ -34,3 +34,4 @@ programInputs.forEach((input) => {
         totalPercent.innerText = percentFormatter.format(this.value);
     })
 })
+
