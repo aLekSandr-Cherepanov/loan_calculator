@@ -1,3 +1,6 @@
+import {priceFormatter} from './formatter.js'
+
+
 //Инпуты
 
 const inputConst = document.querySelector('#input-cost');
@@ -12,6 +15,14 @@ const cleavePriceSetting = {
     delimiter: ' '
 };
 
+/*const cleavePriceSettingRUB = {
+    numeral: true,
+    numeralThousandsGroupStyle: 'thousand',
+    delimiter: ' ',
+    prefix: '₽',
+    tailPrefix: true,
+};*/
+
 //Запускаем форматирование Cleave
 const cleaveCost = new Cleave(inputConst, cleavePriceSetting);
 const cleaveDownPayment = new Cleave(inputDownPayment,cleavePriceSetting);
@@ -24,7 +35,7 @@ form.addEventListener('input', function () {
     const totalAmount = +cleaveCost.getRawValue() - cleaveDownPayment.getRawValue();
     console.log(totalAmount);
 
-    totalCost.innerText = totalAmount;
+    totalCost.innerText = priceFormatter.format(totalAmount);
 
     
 })
